@@ -1,43 +1,54 @@
 .btn {
-    border: none;
-    // background: none;
+  border: none;
+  // background: none;
 
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.1rem;
-    font-weight: 500;
-    padding: 0.4em 1em;
-    border-radius: 0.2em;
-    cursor: pointer;
-    transition: background 300ms ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.4em 1em;
+  border-radius: 0.2em;
+  cursor: pointer;
+  transition: background 300ms ease;
 
-    &--primary {
-        background: $clr-primary $grd-primary;
-        color: white;
-
-        &:hover,
-        &:focus {
-            background: $clr-primary-dark;
-        }
-    }
-    &--secondary {
-        background: $clr-secondary $clr-secondary;
-        color: white;
-
-        &:hover,
-        &:focus {
-            background: $clr-secondary-dark;
-        }
-    }
-}
-
-.link {
-    color: $clr-secondary;
+  &--primary {
+    background: $clr-primary $grd-primary;
+    color: white;
 
     &:hover,
     &:focus {
-        color: $clr-secondary-dark;
-        text-decoration: underline;
+      background: $clr-primary-dark;
     }
+  }
+  &--secondary {
+    background: $clr-secondary $grd-secondary;
+    color: white;
+
+    &:hover,
+    &:focus {
+      background: $clr-secondary-dark;
+    }
+  }
+  &--small {
+    padding: 0.2em 0.6em;
+    font-weight: 600;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+  &--no-bg {
+    background: transparent;
+  }
+}
+
+.link {
+  color: $clr-secondary;
+
+  &:hover,
+  &:focus {
+    color: $clr-secondary-dark;
+    text-decoration: underline;
+  }
 }
