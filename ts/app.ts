@@ -176,10 +176,15 @@
     }
   }
   function calculateResult() {
-    const correctAnswers = userAnswers.filter((answer: string, i: number) => {
-      return answer === mcqs[testData.current][i].answer.toLowerCase()
-    })
-    userResult.correct = correctAnswers.length
+    let correct = 0
+    for (let i = 0; i < userAnswers.length; i++) {
+      if (userAnswers[i] == mcqs[testData.current][i].answer.toLowerCase())
+        correct++
+    }
+    // const correctAnswers = userAnswers.filter((answer: string, i: number) => {
+    //   return answer === mcqs[testData.current][i].answer.toLowerCase()
+    // })
+    userResult.correct = correct
     userResult.wrong = userAnswers.length - userResult.correct
   }
   function handleResultModal() {

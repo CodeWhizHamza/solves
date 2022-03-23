@@ -142,10 +142,15 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         });
     }
     function calculateResult() {
-        var correctAnswers = userAnswers.filter(function (answer, i) {
-            return answer === mcqs[testData.current][i].answer.toLowerCase();
-        });
-        userResult.correct = correctAnswers.length;
+        var correct = 0;
+        for (var i = 0; i < userAnswers.length; i++) {
+            if (userAnswers[i] == mcqs[testData.current][i].answer.toLowerCase())
+                correct++;
+        }
+        // const correctAnswers = userAnswers.filter((answer: string, i: number) => {
+        //   return answer === mcqs[testData.current][i].answer.toLowerCase()
+        // })
+        userResult.correct = correct;
         userResult.wrong = userAnswers.length - userResult.correct;
     }
     function handleResultModal() {
