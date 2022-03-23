@@ -1,0 +1,20 @@
+$clr-primary-light: hsl(290, 98%, 66%);
+$clr-primary: hsl(289, 72%, 52%);
+$clr-primary-dark: hsl(289, 65%, 43%);
+$grd-primary: linear-gradient(
+    to right bottom,
+    $clr-primary-light,
+    $clr-primary,
+    $clr-primary-dark
+);
+
+$clr-secondary-light: hsl(224, 100%, 64%);
+$clr-secondary: hsl(224, 100%, 57%);
+$clr-secondary-dark: hsl(224, 100%, 40%);
+
+$grd-secondary: linear-gradient(
+    to right bottom,
+    $clr-secondary-light,
+    $clr-secondary,
+    $clr-secondary-dark
+);

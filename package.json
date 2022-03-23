@@ -1,0 +1,17 @@
+{
+    "dependencies": {},
+    "name": "mcqs-asker",
+    "version": "1.0.0",
+    "main": "index.js",
+    "devDependencies": {
+        "typescript": "^4.6.2"
+    },
+    "scripts": {
+        "tsc:build": "tsc --build",
+        "tsc:watch": "tsc --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}

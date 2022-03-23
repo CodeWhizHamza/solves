@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: 0.9rem;
+
+    a {
+        color: hsl(224, 100%, 57%);
+
+        &:hover,
+        &:focus {
+            color: hsl(224, 100%, 40%);
+            text-decoration: underline;
+        }
+    }
+}

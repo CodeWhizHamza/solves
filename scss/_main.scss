@@ -1,0 +1,35 @@
+.mcq {
+    &__question {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+    }
+    &__options {
+        list-style: none;
+        margin-bottom: 1.2rem;
+    }
+    &__option {
+        padding: 0.4em 1em;
+        margin-bottom: 0.4rem;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+    &__option-checker {
+        margin-right: 0.5rem;
+    }
+    &__option-text {
+        cursor: pointer;
+        display: block;
+        width: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        &__option {
+            width: 400px;
+        }
+    }
+}
